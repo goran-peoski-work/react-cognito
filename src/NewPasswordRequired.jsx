@@ -66,8 +66,11 @@ const mergeProps = (stateProps, dispatchProps, ownProps) =>
  *   <NewPasswordRequiredForm />
  * </NewPasswordRequired>
  */
-export const NewPasswordRequired = connect(
+const NewPasswordRequired = connect(
   mapStateToProps,
   mapDispatchToProps,
   mergeProps,
 )(BaseNewPasswordRequired);
+
+
+export {NewPasswordRequired,BaseNewPasswordRequired}

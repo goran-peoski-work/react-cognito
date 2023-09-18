@@ -92,8 +92,11 @@ const mergeProps = (stateProps, dispatchProps, ownProps) =>
  *   <PasswordResetForm />
  * </PasswordReset>
  */
-export const PasswordReset = connect(
+const PasswordReset = connect(
   mapStateToProps,
   mapDispatchToProps,
   mergeProps,
 )(BasePasswordReset);
+
+
+export {PasswordReset, BasePasswordReset}

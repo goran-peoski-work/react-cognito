@@ -60,4 +60,4 @@ const Login = connect(
   mergeProps,
 )(BaseLogin);
 
-export { Login };
+export { Login, BaseLogin };
